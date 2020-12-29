@@ -27,8 +27,8 @@ type Client struct {
 }
 
 // NewClient created a new Client
-func NewClient() *Client {
-	return &Client{
+func NewClient() Client {
+	return Client{
 		HTTPClient:    cleanhttp.DefaultClient(),
 		RetryWaitMin:  defaultRetryWaitMin,
 		RetryWaitMax:  defaultRetryWaitMax,
